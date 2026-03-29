@@ -8,21 +8,21 @@ Recreated for learning purposes and expanded with custom execution flags:
 -E (show line end with $)
 
 
-#BUILDING
+# BUILDING
 
-###To build jcat you need gcc:
+### To build jcat you need gcc:
 
 ```shell
 sudo apt install gcc
 ```
 
-###After you ahve installed gcc build simply by using:
+### After you ahve installed gcc build simply by using:
 
 ```shell
 gcc -Wall jcat.c -o jcat
 ```
 
-#Usage
+# Usage
 
 ```shell
 ./jcat -n -s sampletext.txt
