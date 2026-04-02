@@ -75,7 +75,7 @@ int main(int argc, char* argv[])
 	{
 		if((flags & NUMBER_LINE) && startNew)
 		{
-			printf("%i  ", currLine);
+			printf("%ld  ", currLine);
 			startNew = 0;
 		}
 		if(currChar == '\n')
@@ -96,7 +96,7 @@ int main(int argc, char* argv[])
 	{
 		fseek(fileptr, 0, SEEK_END);
 		long sizeByte = ftell(fileptr);
-		printf("jcat: File length is %i characters: size: %.2f KB(%i bytes)\n", size, (float)(sizeByte/1024), sizeByte);
+		printf("jcat: File length is %ld characters: size: %.2f KB(%ld bytes)\n", size, (float)(sizeByte/1024), sizeByte);
 	}
 	fclose(fileptr);
 	return 0;
